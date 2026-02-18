@@ -1,0 +1,25 @@
+uuid: 4a75c615-9581-4758-ad3d-779eb2f901ae
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4c608482-c5fd-4b5c-b5ab-1dafd063b65f'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_copyrightstiffpromotions
+theme: loop
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:4c608482-c5fd-4b5c-b5ab-1dafd063b65f'
+settings:
+  id: 'block_content:4c608482-c5fd-4b5c-b5ab-1dafd063b65f'
+  label: 'Copyright Stiff Promotions'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

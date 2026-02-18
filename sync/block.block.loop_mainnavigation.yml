@@ -1,0 +1,20 @@
+uuid: 143f33ea-8800-41c5-a1a0-651a123df9e1
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - tb_megamenu
+  theme:
+    - loop
+id: loop_mainnavigation
+theme: loop
+region: nav_main
+weight: 0
+provider: null
+plugin: 'tb_megamenu_menu_block:main'
+settings:
+  id: 'tb_megamenu_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: tb_megamenu
+visibility: {  }

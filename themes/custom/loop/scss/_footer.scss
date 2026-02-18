@@ -1,0 +1,101 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  position: relative;
+  font-size: 1rem;
+  z-index: 10;
+
+  .region-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+#copyright {
+  margin-bottom: 20px;
+
+  .text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 209px;
+    height: auto;
+  }
+}
+
+#footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 50%;
+
+    span {
+      display: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: $secondary;
+    }
+  }
+}
+
+nav#block-loop-footer ul {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  a {
+    display: block;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: smaller;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+#ultraluminal {
+  .text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 8px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 90px;
+    height: auto;
+  }  
+}

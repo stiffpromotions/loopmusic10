@@ -1,0 +1,25 @@
+uuid: 32996b13-e7cd-41f8-ba4f-87bc4f34217e
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:53c4431f-0ba8-42be-a457-daf2976b0283'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_ourshowband
+theme: loop
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:53c4431f-0ba8-42be-a457-daf2976b0283'
+settings:
+  id: 'block_content:53c4431f-0ba8-42be-a457-daf2976b0283'
+  label: Band
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

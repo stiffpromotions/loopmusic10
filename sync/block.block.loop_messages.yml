@@ -1,0 +1,22 @@
+uuid: cbf06b9b-6d17-4450-a09d-827586a907c5
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - loop
+_core:
+  default_config_hash: ZHnvjT__zM1kzg1po6Hcit27ggmjFN-wYb_1RjT9mgM
+id: loop_messages
+theme: loop
+region: content
+weight: -9
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

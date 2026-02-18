@@ -1,0 +1,25 @@
+uuid: d109015e-5490-4b22-9d22-6712e748b1b7
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:38edb107-e36b-4370-8894-14fec053ee0f'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_youreventchristmas
+theme: loop
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:38edb107-e36b-4370-8894-14fec053ee0f'
+settings:
+  id: 'block_content:38edb107-e36b-4370-8894-14fec053ee0f'
+  label: Christmas
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

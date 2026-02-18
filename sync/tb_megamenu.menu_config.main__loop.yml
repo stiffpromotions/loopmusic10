@@ -1,0 +1,240 @@
+uuid: e9025bac-270c-4553-81e5-c7d7db23d13d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  theme:
+    - loop
+id: main__loop
+menu: main
+theme: loop
+block_config: |-
+  {
+      "animation": "none",
+      "duration": 400,
+      "delay": 200,
+      "breakpoint": 767,
+      "hide-mobile-menu": "1",
+      "auto-arrow": "",
+      "always-show-submenu": "",
+      "number-columns": 10
+  }
+menu_config: |-
+  {
+      "menu_link_content:9b1fdfb2-d662-4c71-924e-8fc26d8f6268": {
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "loop_youreventcorporate",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "4",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "loop_youreventprivateparty",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "4",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "loop_youreventwedding",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "4",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ],
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "loop_youreventchristmas",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "4",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "loop_youreventfestival",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "4",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "loop_youreventinternational",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "4",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      },
+      "menu_link_content:6b8e5dfd-d974-409b-8c9b-8fd4b93bfe08": {
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "loop_ourshowduo",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "6",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "loop_ourshowband",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "6",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      },
+      "menu_link_content:b8a2829b-3e7d-4a62-9729-b95ec0f0e035": {
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "loop_mediapromovideo",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "6",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "loop_mediagallery",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "6",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      }
+  }

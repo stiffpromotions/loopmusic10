@@ -1,0 +1,38 @@
+uuid: 32a3e934-66b4-430b-aa05-b0da16c634f3
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.endorsement.body
+    - field.field.node.endorsement.field_link
+    - field.field.node.endorsement.field_logo
+    - image.style.max_325x325
+    - node.type.endorsement
+  module:
+    - image
+    - user
+id: node.endorsement.default
+targetEntityType: node
+bundle: endorsement
+mode: default
+content:
+  field_logo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: max_325x325
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_link: true
+  langcode: true

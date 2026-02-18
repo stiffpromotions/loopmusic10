@@ -1,0 +1,25 @@
+uuid: 5c9e188d-d2d4-4a3f-bf33-493dbde545dc
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:5076151f-e5c6-4e9e-bacd-8b7ebc1fdf3a'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_youreventinternational
+theme: loop
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:5076151f-e5c6-4e9e-bacd-8b7ebc1fdf3a'
+settings:
+  id: 'block_content:5076151f-e5c6-4e9e-bacd-8b7ebc1fdf3a'
+  label: International
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

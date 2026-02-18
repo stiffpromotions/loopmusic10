@@ -1,0 +1,25 @@
+uuid: ffa88703-663f-4078-8e60-1fe77017b8f6
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_enquirymenu
+theme: loop
+region: upper_cta
+weight: -9
+provider: null
+plugin: 'block_content:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
+settings:
+  id: 'block_content:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
+  label: 'Enquiry menu'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

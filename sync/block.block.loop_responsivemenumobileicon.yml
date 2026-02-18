@@ -1,0 +1,20 @@
+uuid: 6f25da6d-7905-49d6-aa06-68302dfa978a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - loop
+id: loop_responsivemenumobileicon
+theme: loop
+region: nav_additional
+weight: -9
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  label_display: '0'
+  provider: responsive_menu
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 0da2cc69-a0ba-40b2-9c17-6826025db3cd
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:a03d3beb-5c4e-447b-8353-b70e7bb84769'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_youreventwedding
+theme: loop
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:a03d3beb-5c4e-447b-8353-b70e7bb84769'
+settings:
+  id: 'block_content:a03d3beb-5c4e-447b-8353-b70e7bb84769'
+  label: Wedding
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

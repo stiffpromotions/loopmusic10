@@ -1,0 +1,25 @@
+uuid: c6500da3-c64c-404c-83f5-5187ac539eca
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:879cca9a-5e1a-41d3-b973-faaced63f34c'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_youreventcorporate
+theme: loop
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:879cca9a-5e1a-41d3-b973-faaced63f34c'
+settings:
+  id: 'block_content:879cca9a-5e1a-41d3-b973-faaced63f34c'
+  label: Corporate
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

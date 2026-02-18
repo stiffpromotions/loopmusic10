@@ -1,0 +1,24 @@
+uuid: 386de112-f876-4380-b677-df433c2758c7
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.endorsement
+  module:
+    - text
+id: node.endorsement.body
+field_name: body
+entity_type: node
+bundle: endorsement
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

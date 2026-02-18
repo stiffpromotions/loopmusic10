@@ -1,0 +1,25 @@
+uuid: 8dc7dfc3-c67a-4a1d-84d8-e3cba83898f8
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:2dbd0643-ab72-4166-ad4f-f32da55bef0b'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_ourshowduo
+theme: loop
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:2dbd0643-ab72-4166-ad4f-f32da55bef0b'
+settings:
+  id: 'block_content:2dbd0643-ab72-4166-ad4f-f32da55bef0b'
+  label: Duo
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

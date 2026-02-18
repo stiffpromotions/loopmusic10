@@ -1,0 +1,25 @@
+uuid: c4aa82ad-5162-4767-bd97-bdc9e9a6cc11
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:b0af3959-1b79-44d0-a49d-727224621b86'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_youreventfestival
+theme: loop
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:b0af3959-1b79-44d0-a49d-727224621b86'
+settings:
+  id: 'block_content:b0af3959-1b79-44d0-a49d-727224621b86'
+  label: Festival
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

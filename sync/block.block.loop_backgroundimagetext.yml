@@ -1,0 +1,20 @@
+uuid: 03346cb9-80df-4325-b16f-004b6d7c4a62
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - background_image
+  theme:
+    - loop
+id: loop_backgroundimagetext
+theme: loop
+region: background_image
+weight: -8
+provider: null
+plugin: background_image_text
+settings:
+  id: background_image_text
+  label: 'Background Image - Text'
+  label_display: ''
+  provider: background_image
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 6e56d2b5-2221-4aad-9983-acb8f92c9e25
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:8dd3ec5b-accf-46b2-a20e-07cb764626d0'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_youreventprivateparty
+theme: loop
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:8dd3ec5b-accf-46b2-a20e-07cb764626d0'
+settings:
+  id: 'block_content:8dd3ec5b-accf-46b2-a20e-07cb764626d0'
+  label: 'Private party'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

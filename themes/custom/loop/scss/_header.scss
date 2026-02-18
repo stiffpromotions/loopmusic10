@@ -1,0 +1,29 @@
+header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 20;
+}
+
+#header-container-left {
+  .navbar-brand img {
+    max-height: 50px;
+  }
+}
+
+#header-container-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-container-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .region-nav-additional {
+    display: flex;
+  }
+}

@@ -1,0 +1,8 @@
+uuid: 74100720-9997-4d09-beb2-9239c748abdd
+langcode: en-gb
+status: true
+dependencies: {  }
+id: mmenu
+label: Mmenu
+description: 'The sidebar menu.'
+locked: false

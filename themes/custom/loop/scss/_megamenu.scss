@@ -1,0 +1,194 @@
+#block-loop-mainnavigation {
+  width: 100%;
+
+  /* TBM MENU MENU STRUCTURE */
+
+  // Primary menu items
+  .tbm {
+    background-color: inherit;
+    margin: 0 auto 15px auto;
+  }
+
+  .tbm-nav {
+    justify-content: center;
+
+    .tbm-item.level-1 {
+      font-family: $headings-font-family;
+      // text-transform: uppercase;
+      border-right: inherit;
+      margin: 0 20px;
+      font-weight: $font-weight-bold;
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        margin: 0 10px;
+      }
+    }
+
+    .tbm-link.level-1,
+    .tbm-link.level-1:hover {
+      color: $white;
+      background-color: inherit;
+      padding: 0;
+      outline: none;
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 16px;
+      }
+    }
+
+    .tbm-submenu-toggle {
+      display: flex;
+      justify-content: right;
+      color: $white;
+      background-color: inherit;
+      padding: 0;
+      width: 27px;
+      position: relative;
+      top: 2px;
+      outline: none;
+    }
+
+    .tbm-submenu-toggle:before {
+      left: inherit;
+    }
+  }
+
+  // Submenu
+  .tbm-item.level-1 > .tbm-submenu {
+    z-index: 1;
+    margin-top: 30px;
+    padding: 30px 20px 0px 20px;
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.25);
+    isolation: isolate;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+  }
+
+
+  /* This lovely bit of code ensures the CTA buttons are neatly aligned at the bottom of each column */
+
+  /* 1) ensure all four columns are equal height */
+  // Set space between sub menu columns
+  .tbm-row {
+    column-gap: 20px;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px;
+  }
+
+  /* 2) make each column a flex column that can stretch */
+  .tbm-row > .tbm-column {
+    display: flex;
+  }
+
+  /* Column widths are going a bit squiffy so let's confirm them */
+  .tbm-row > .tbm-column.span3 {width: 25%;}
+  .tbm-row > .tbm-column.span4 {width: 33.333333%;}
+  .tbm-row > .tbm-column.span6 {width: 50%;}
+
+  /* 3) make the inner wrappers stretch too */
+  .tbm-row > .tbm-column > .tbm-column-inner,
+  .tbm-row > .tbm-column > .tbm-column-inner > .tbm-block,
+  .tbm-row > .tbm-column > .tbm-column-inner > .tbm-block > .block-inner,
+  .tbm-row > .tbm-column > .tbm-column-inner > .tbm-block > .block-inner > .block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* 4) make the "card content" area (image + text + link) a flex column */
+  .tbm-row .block > .layout {
+    flex: 1 1 auto;
+    display: flex;
+  }
+
+  .tbm-row .block > .layout .layout__region--content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 5) let body take remaining space, and pin link to bottom */
+  .tbm-row .block .field--name-body {
+    flex: 1 1 auto;
+  }
+
+  .tbm-row .block .field--name-field-link {
+    margin-top: auto;       /* key line */
+  }
+
+  /* Neat code ends! */
+
+
+
+  /* TBM MENU MENU CONTENT */
+
+  h2 {
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+
+    @media (max-width: 991px) {
+      font-size: 16px;
+    }
+  }
+
+  .field--name-field-media-image {
+    margin: 0 0 20px 0;
+    img {
+      border-radius: $border-radius-img;
+    }
+  }
+
+  .field__item:nth-of-type(2),
+  .field--name-body {
+    font-weight: $font-weight-normal;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+
+    @media (min-width: 1200px) and (max-width: 1599px) {font-size: 16px;}
+    @media (min-width:  992px) and (max-width: 1199px) {font-size: 14px;}
+    @media (min-width:  768px) and (max-width:  991px) {font-size: 14px;}
+  }
+
+  .field--name-field-link {
+    display: flex;
+    justify-content: center; 
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .field--name-field-link {
+    @media (min-width: 1200px) and (max-width: 1599px) {font-size: 16px;}
+    @media (min-width:  992px) and (max-width: 1199px) {font-size: 12px;}
+    @media (min-width:  768px) and (max-width:  991px) {font-size: 12px;}
+  }
+
+  .field--name-field-link a {
+    @media (min-width:  992px) and (max-width: 1199px) {width: 130px;}
+    @media (min-width:  768px) and (max-width:  991px) {width: 130px;}
+  }
+
+
+  /* Three CTA buttons under "Our show" menu */
+  .our-show-cta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .field--name-field-link {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+name: LOOP
+type: theme
+description: 'LOOP subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^9.4 || ^10'
+'base theme': bootstrap5
+libraries:
+  - loop/global-styling
+  - loop/video_autoplay
+ckeditor_stylesheets:
+  - css/style.css
+ckeditor5-stylesheets:
+  - css/ck5style.css
+regions:
+  header: Header
+  upper_cta: 'Upper CTA'
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  breadcrumb: Breadcrumbs
+  background_image: 'Background image'
+  video_wallpaper: 'Video wallpaper'
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  logos: Logos
+  footer: Footer
+  hidden_blocks: 'Hidden blocks for TB Mega Menu'
+libraries-override:
+  bootstrap5/global-styling: false

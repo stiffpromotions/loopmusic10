@@ -1,0 +1,20 @@
+uuid: 8214b777-877a-4319-a001-d7910988b0f3
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - loop
+_core:
+  default_config_hash: IVB-SVxUcWsQgq8LrS4ZNo2mfxskD6lN-OzaUd6ndZg
+id: loop_local_actions
+theme: loop
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

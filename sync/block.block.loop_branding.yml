@@ -1,0 +1,25 @@
+uuid: fd897fcb-7752-4897-b1e5-ddea546b9b6c
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - loop
+_core:
+  default_config_hash: FJPL5HJRxseK3dA4yZPxL-i8Eoz647Ld_-x3OXQxh5k
+id: loop_branding
+theme: loop
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

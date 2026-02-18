@@ -1,0 +1,22 @@
+uuid: 812afc18-c0bd-49c0-a2b8-2a3e766397a9
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - loop
+_core:
+  default_config_hash: 6Xc7Y57WFLErRhvpvHi92ty19v68WVL3Cg8BS2QgDTE
+id: loop_content
+theme: loop
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

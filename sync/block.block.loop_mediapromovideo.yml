@@ -1,0 +1,25 @@
+uuid: 9ad6cd5b-5f15-4ab0-9271-945275f3ba2e
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:aa554290-6add-4c1b-a57b-7de34cf7f850'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_mediapromovideo
+theme: loop
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:aa554290-6add-4c1b-a57b-7de34cf7f850'
+settings:
+  id: 'block_content:aa554290-6add-4c1b-a57b-7de34cf7f850'
+  label: 'Promo video'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

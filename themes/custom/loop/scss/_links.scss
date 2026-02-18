@@ -1,0 +1,26 @@
+.btn,
+.cm-btn,
+#block-loop-mainnavigation .field--name-field-link a {
+  font-family: $headings-font-family;
+  font-size: 1rem;
+  text-transform: uppercase !important;
+  background-color: $primary !important;
+  color: $white !important;
+  border: inherit !important;
+  border-radius: 20px !important;
+  padding: 10px 16px !important;
+  line-height: 1 !important;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary !important;
+    border: inherit !important;
+    color: $white !important;
+  }
+}
+
+#book-now-button {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}

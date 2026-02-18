@@ -1,0 +1,133 @@
+.region-nav-main {
+  margin-top: 15px;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;*/
+}
+
+#block-loop-main-navigation {
+  font-family: $headings-font-family;
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  top: 2px;
+
+  > ul {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center !important;
+
+    /* Underline styles */
+    a,
+    span.nav-link {
+      color: $white;
+      display: block;
+      position: relative;
+      padding: 0 0 5px 0;
+    }
+
+    a.is-active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Scale from center */
+    a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+      transition: opacity 400ms, transform 400ms;
+      opacity: 1;
+      transform: scale(0);
+      transform-origin: center;
+    }
+
+    a:hover::after,
+    a:focus::after {
+      opacity: 1;
+      transform: translate3d(0, 0.2em, 0);
+      transform: scale(1);
+    }
+  }
+}
+
+
+#enquiry-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-family: $headings-font-family;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+
+  i {
+    margin-right: 5px;
+  }
+
+  a {
+    display: block;
+    color: $white;
+    text-decoration: none;
+    line-height: 1;
+    padding: 9px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.35);
+
+    &:hover,
+    &:focus {
+      background-color: $secondary;
+      color: $white;
+    }
+  }
+}
+
+@media only screen and (min-width : 1199px) and (max-width : 1399px) {
+  nav#block-loop-main-navigation,
+  #block-loop-enquirymenu {
+    font-size: 13px;
+    > ul {
+      gap: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+  nav#block-loop-main-navigation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 379px) {
+  #block-loop-enquirymenu {
+    #enquiry-menu a {
+      padding: 9px;
+    }
+    i {
+      margin: 0;
+    }
+    span {
+      display: none;
+    }
+  }
+}

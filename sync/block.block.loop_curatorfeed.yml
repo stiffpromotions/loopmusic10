@@ -1,0 +1,30 @@
+uuid: 8fde832d-91d0-4ddc-90f4-f156a0df1e16
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+  module:
+    - block_content
+    - system
+  theme:
+    - loop
+id: loop_curatorfeed
+theme: loop
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+settings:
+  id: 'block_content:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+  label: 'Curator feed'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /social

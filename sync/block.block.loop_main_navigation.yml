@@ -1,0 +1,27 @@
+uuid: 390995b6-0517-433e-a7e8-15bd0ef7ae11
+langcode: en-gb
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - loop
+_core:
+  default_config_hash: EWSLROSHZdRhirpYj01-D0bDOs4W9yGehTSJs_3dsJU
+id: loop_main_navigation
+theme: loop
+region: nav_main
+weight: -9
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

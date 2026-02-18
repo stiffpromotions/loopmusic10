@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/acaddcfs/loopmusic.uk
+    - /bin/cp -r * $DEPLOYPATH

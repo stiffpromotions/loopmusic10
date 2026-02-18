@@ -1,0 +1,40 @@
+uuid: 287ca391-eb1a-4102-ad5c-ed855da5c175
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.content
+    - field.field.media.video.field_media_video_file
+    - media.type.video
+  module:
+    - blazy
+    - file
+_core:
+  default_config_hash: SxvbuGh-6cQMxl9bBV27-hGI46u7ZvwlMm5ObaJMNnw
+id: media.video.content
+targetEntityType: media
+bundle: video
+mode: content
+content:
+  field_media_video_file:
+    type: file_video
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+      muted: false
+      width: 640
+      height: 480
+    third_party_settings:
+      blazy:
+        blazy: true
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

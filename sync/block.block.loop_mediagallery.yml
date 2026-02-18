@@ -1,0 +1,25 @@
+uuid: 37f1de7a-9c19-4635-bda9-a86b69044918
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:c34b7378-f590-427a-9b9e-b2ea84e8c699'
+  module:
+    - block_content
+  theme:
+    - loop
+id: loop_mediagallery
+theme: loop
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:c34b7378-f590-427a-9b9e-b2ea84e8c699'
+settings:
+  id: 'block_content:c34b7378-f590-427a-9b9e-b2ea84e8c699'
+  label: Gallery
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

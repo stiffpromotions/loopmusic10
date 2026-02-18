@@ -1,0 +1,34 @@
+uuid: d600d533-aced-4338-a159-921c6322baa7
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - media.type.image
+    - node.type.testimonial
+  content:
+    - 'media:image:9524ef1d-331a-46bd-ae93-44278db37098'
+id: node.testimonial.field_image
+field_name: field_image
+entity_type: node
+bundle: testimonial
+label: Image
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 9524ef1d-331a-46bd-ae93-44278db37098
+    weight: 0
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,36 @@
+.view-video-page {
+  margin-top: 30px;
+  margin-bottom: 90px;
+
+  .views-row {
+    article {
+      border: 1px solid $white;
+      border-radius: 10px;
+    }
+  }
+
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .media--type-remote-video {
+    margin: 0;
+  }
+
+  .media--type-remote-video img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .field--name-field-media-title,
+  .field--name-name {
+    max-width: 400px;
+    font-family: $headings-font-family;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+  }
+}

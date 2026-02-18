@@ -1,0 +1,25 @@
+uuid: 55bcf0c9-3fff-472d-9a9e-fdac1e7b7ba7
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - loop
+id: loop_footer
+theme: loop
+region: footer
+weight: -7
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

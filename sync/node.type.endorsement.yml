@@ -1,0 +1,17 @@
+uuid: 1a23bc26-ac19-4f51-9160-80718130ddae
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Endorsement
+type: endorsement
+description: 'Add an <em>endorsement</em> to the website which will typically be displayed in the footer.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

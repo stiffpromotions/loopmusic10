@@ -1,0 +1,19 @@
+uuid: 6f08bd1e-db73-4905-a448-5fa4284974cc
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - yoast_seo
+id: node.field_keywords
+field_name: field_keywords
+entity_type: node
+type: yoast_seo
+settings: {  }
+module: yoast_seo
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

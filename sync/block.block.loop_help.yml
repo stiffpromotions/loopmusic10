@@ -1,0 +1,22 @@
+uuid: 385d8f58-5d37-4ffe-bfdd-afaea52428c6
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - loop
+_core:
+  default_config_hash: LHWygjnroFHwTkCqZuO518mZcqkMDQigattwK_QZs74
+id: loop_help
+theme: loop
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
