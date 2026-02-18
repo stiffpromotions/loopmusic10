@@ -1,117 +1,47 @@
-uuid: d67656a6-5355-4682-bb3f-bfc343803897
+uuid: eae9f812-e8cb-4c9b-9ded-1fe698e3e8f5
 langcode: en-gb
-status: closed
-dependencies:
-  enforced:
-    module:
-      - webform
-_core:
-  default_config_hash: _je-MWeeJB6gfm6iECiqjcyNetfMFbn-YIInYwZ1gIk
+status: open
+dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: null
+uid: 1
 template: false
 archive: false
-id: contact
-title: Contact
-description: 'Basic email contact webform.'
+id: contact_v3
+title: 'Contact v3'
+description: "<p>Updated webform from v2 that isn't a multi-step AJAX solution.</p>"
 categories: {  }
 elements: |-
-  your_details:
-    '#type': container
-    '#align_items': center
-    your_details_title:
-      '#type': processed_text
-      '#text': '<h2>Your details</h2>'
-      '#format': full_html
-    first_name:
-      '#type': textfield
-      '#title': 'First name'
-      '#title_display': invisible
-      '#placeholder': 'First name'
-      '#required': true
-    last_name:
-      '#type': textfield
-      '#title': 'Last name'
-      '#title_display': invisible
-      '#placeholder': 'Last name'
-      '#required': true
-    company:
-      '#type': textfield
-      '#title': Company
-      '#title_display': invisible
-      '#placeholder': Company
-    email:
-      '#type': email
-      '#title': Email
-      '#title_display': invisible
-      '#placeholder': 'Email address'
-      '#required': true
-    mobile:
-      '#type': textfield
-      '#title': Mobile
-      '#title_display': invisible
-      '#placeholder': 'Mobile number'
-      '#required': true
-    country:
-      '#type': textfield
-      '#title': Country
-      '#title_display': invisible
-      '#placeholder': Country
-      '#required': true
-  event_details:
-    '#type': container
-    event_details_title:
-      '#type': processed_text
-      '#text': '<h2>Event details</h2>'
-      '#format': full_html
-    event_date:
-      '#type': date
-      '#title': 'Event date'
-      '#title_display': invisible
-      '#placeholder': Date
-      '#required': true
-    event_venue:
-      '#type': textfield
-      '#title': 'Event venue'
-      '#title_display': invisible
-      '#placeholder': Venue
-    event_city:
-      '#type': textfield
-      '#title': 'Event city'
-      '#title_display': invisible
-      '#placeholder': City
-    event_type:
-      '#type': webform_select_other
-      '#title': 'Event type'
-      '#title_display': invisible
-      '#options':
-        wedding: Wedding
-        corporate: Corporate
-        cocktail_party: 'Cocktail party'
-        dinner: Dinner
-        fundraiser: Fundraiser
-        gala: Gala
-        promo_event: 'Promo event'
-        rehearsal_dinner: 'Rehearsal dinner'
-        bar_bat_mitzvah: 'Bar/Bat Mitzvah'
-        private_event: 'Private event'
-        birthday_party: 'Birthday party'
-        anniversary: Anniversary
-        holiday_party: 'Holiday party'
-      '#empty_option': 'Event type'
-      '#select2': true
-    number_of_guests:
-      '#type': textfield
-      '#title': 'Number of guests'
-      '#title_display': invisible
-      '#placeholder': 'Number of guests'
-    message:
-      '#type': textarea
-      '#title': Message
-      '#title_display': invisible
-      '#placeholder': 'Please feel free to add any other details.'
+  name:
+    '#type': textfield
+    '#title': Name
+    '#title_display': invisible
+    '#placeholder': 'What is your name?'
+    '#required': true
+    '#default_value': '[current-user:display-name]'
+    '#format_items': comma
+  email:
+    '#type': email
+    '#title': Email
+    '#title_display': invisible
+    '#placeholder': 'What is your email address?'
+    '#required': true
+    '#default_value': '[current-user:mail]'
+    '#format_items': comma
+  telephone:
+    '#type': textfield
+    '#title': Telephone
+    '#title_display': invisible
+    '#placeholder': "What's your telephone number?"
+    '#format_items': comma
+    '#required': true
+  details:
+    '#type': textarea
+    '#title': Details
+    '#title_display': invisible
+    '#placeholder': 'Finally, please tell us a bit about your event, for example: the date, the location and the number of guests'
+    '#format_items': comma
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -119,11 +49,11 @@ elements: |-
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
-  ajax_progress_type: ''
-  ajax_effect: ''
-  ajax_speed: null
+  ajax_progress_type: throbber
+  ajax_effect: none
+  ajax_speed: 500
   page: true
   page_submit_path: ''
   page_confirm_path: ''
@@ -220,10 +150,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: modal
-  confirmation_url: '<front>'
-  confirmation_title: 'Thank you'
-  confirmation_message: '<p>Thank you for your interest in working with L.O.O.P. – we’ll be back to you within the next 24 hours.</p>'
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -300,31 +230,31 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  email_confirmation:
+  email:
     id: email
-    handler_id: email_confirmation
-    label: 'Email confirmation'
+    handler_id: email
+    label: 'Email notification'
     notes: ''
-    status: false
+    status: true
     conditions: {  }
-    weight: 1
+    weight: 0
     settings:
       states:
         - completed
-      to_mail: '[current-user:mail]'
+      to_mail: 'iain@stiffpromotions.co.uk,lm@tailored-entertainment.com'
       to_options: {  }
-      bcc_mail: ''
+      bcc_mail: info@alimartin.com
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: _default
+      from_mail: noreply@loopmusic.uk
       from_options: {  }
-      from_name: _default
+      from_name: '* LOOP website *'
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '* Enquiry from L.O.O.P. website *'
+      subject: '* Enquiry from LOOP website *'
       body: _default
       excluded_elements: {  }
       ignore_access: false
@@ -337,31 +267,31 @@ handlers:
       theme_name: ''
       parameters: {  }
       debug: false
-  email_notification:
+  email_1:
     id: email
-    handler_id: email_notification
-    label: 'Email notification'
+    handler_id: email_1
+    label: Test
     notes: ''
-    status: true
+    status: false
     conditions: {  }
-    weight: 2
+    weight: 0
     settings:
       states:
         - completed
-      to_mail: 'iain@stiffpromotions.co.uk,lm@tailored-entertainment.com'
+      to_mail: 'info@alimartin.com,alistairamartin@me.com'
       to_options: {  }
-      bcc_mail: info@alimartin.com
+      bcc_mail: ''
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
       from_mail: noreply@loopmusic.uk
       from_options: {  }
-      from_name: '* L.O.O.P. website *'
+      from_name: _default
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '* Enquiry from L.O.O.P. website *'
+      subject: _default
       body: _default
       excluded_elements: {  }
       ignore_access: false

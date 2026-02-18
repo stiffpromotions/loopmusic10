@@ -11,8 +11,8 @@ $settings['trusted_host_patterns'] = [
   '^.+\.loopmusic\.uk$',
   '^loopmusic\.hyperluminal\.co\.uk$',
   '^.+\.loopmusic\.hyperluminal\.co\.uk$',
-  '^loopmusic\.ddev\.site$',
-  '^.+\.loopmusic\.ddev\.site$',
+  '^loopmusic10\.ddev\.site$',
+  '^.+\.loopmusic10\.ddev\.site$',
 ];
 
 $settings['config_sync_directory'] = DRUPAL_ROOT . '/sync';
